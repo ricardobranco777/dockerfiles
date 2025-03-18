@@ -1,4 +1,5 @@
 FROM	alpine
 
 RUN	apk add build-base	\
-		clang
+		clang		\
+	&& apk cache purge
